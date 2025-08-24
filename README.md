@@ -46,9 +46,11 @@ RESTful API: This isn't a single technology but an architectural style for the b
 MySQL: This is an open-source relational database management system. MySQL is where all the project's data—including user accounts, property listings, and booking details—will be stored, organized, and managed.
 
 **Database Design**
+
 To effectively manage the data for this application, we will structure the database around a few key entities and their relationships.
 
 **Entities & Fields**
+
 Users: Represents a person on the platform, whether a host or a guest.
 
 id (Primary Key)
@@ -62,6 +64,7 @@ password_hash
 created_at
 
 **Properties: Represents a listing that a user can book.**
+
 
 id (Primary Key)
 
@@ -87,6 +90,7 @@ property_id (Foreign Key to Properties)
 
 **Reviews: Represents a guest's review of a property they have stayed in.**
 
+
 id (Primary Key)
 
 rating
@@ -110,6 +114,7 @@ booking_id (Foreign Key to Bookings)
 payment_date
 
 **Relationships**
+
 The entities are related in the following ways:
 
 A User can have many Properties (acting as a host) and can also make many Bookings and write many Reviews (acting as a guest).

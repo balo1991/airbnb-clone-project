@@ -30,6 +30,20 @@ Back-end: Python (Flask), RESTful API
 
 Database: MySQL
 
+**Technology Stack**
+This project's technology stack is a combination of front-end, back-end, and database technologies chosen for their power and efficiency in web development.
+
+HTML (HyperText Markup Language): This is the fundamental language for building the structure of a web page. Think of it as the skeleton of the website, defining all the content like headings, paragraphs, and images.
+
+CSS (Cascading Style Sheets): CSS is used to style the HTML. It controls the visual aspects of the website, including colors, fonts, layouts, and animations, turning a plain HTML structure into a visually appealing user interface.
+
+JavaScript (React): A powerful JavaScript library for building dynamic and interactive user interfaces. React allows for the creation of reusable components, which makes the front-end development process more efficient and the application's UI more responsive.
+
+Python (Flask): Python is the core programming language for the back-end. Flask is a lightweight web framework that provides the tools necessary to handle requests from the front-end, manage the application's logic, and interact with the database.
+
+RESTful API: This isn't a single technology but an architectural style for the back-end. The RESTful API serves as the communication bridge between the front-end and the back-end, allowing the front-end to request and receive data (such as property listings or user information) from the server using standard HTTP methods like GET, POST, PUT, and DELETE.
+
+MySQL: This is an open-source relational database management system. MySQL is where all the project's data—including user accounts, property listings, and booking details—will be stored, organized, and managed.
 **Team Roles**
 Based on the project's needs and industry standards, here are the roles and responsibilities for a project team working on a web application like this AirBnB clone.
 

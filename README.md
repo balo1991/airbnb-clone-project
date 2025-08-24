@@ -146,6 +146,16 @@ Review System: This feature allows guests to leave reviews and ratings for prope
 
 Payment System: This handles the financial transactions associated with bookings. It ensures that payments are securely processed and recorded, associating them with specific bookings to complete the reservation process.
 
+**API Security**
+
+Securing the backend API is one of the most critical aspects of this project. It ensures that sensitive data remains protected and that the application is resilient against malicious attacks. We will implement key measures to safeguard our API endpoints.
+
+Authentication: This is the process of verifying a user's identity when they attempt to access protected resources. By requiring a user to log in with a username and password (or a token), we can confirm they are who they say they are, which is essential for protecting private user data and ensuring only legitimate users can create or manage bookings.
+
+Authorization: Once a user is authenticated, authorization determines what they are allowed to do. For example, a host should only be authorized to edit their own property listings, not those of another user. This prevents unauthorized actions and protects data integrity across the platform.
+
+Rate Limiting: This measure controls the number of API requests a user can make within a specific time frame. It is a vital defense against brute-force attacks and denial-of-service (DoS) attempts, helping to prevent our systems from being overwhelmed and ensuring consistent availability and performance for all users.
+
 **Team Roles**
 Based on the project's needs and industry standards, here are the roles and responsibilities for a project team working on a web application like this AirBnB clone.
 

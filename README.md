@@ -44,6 +44,84 @@ Python (Flask): Python is the core programming language for the back-end. Flask 
 RESTful API: This isn't a single technology but an architectural style for the back-end. The RESTful API serves as the communication bridge between the front-end and the back-end, allowing the front-end to request and receive data (such as property listings or user information) from the server using standard HTTP methods like GET, POST, PUT, and DELETE.
 
 MySQL: This is an open-source relational database management system. MySQL is where all the project's data—including user accounts, property listings, and booking details—will be stored, organized, and managed.
+
+**Database Design**
+To effectively manage the data for this application, we will structure the database around a few key entities and their relationships.
+
+**Entities & Fields**
+Users: Represents a person on the platform, whether a host or a guest.
+
+id (Primary Key)
+
+username
+
+email
+
+password_hash
+
+created_at
+
+**Properties: Represents a listing that a user can book.**
+
+id (Primary Key)
+
+title
+
+description
+
+price_per_night
+
+host_id (Foreign Key to Users)
+
+Bookings: Represents a confirmed reservation for a property.
+
+id (Primary Key)
+
+start_date
+
+end_date
+
+user_id (Foreign Key to Users)
+
+property_id (Foreign Key to Properties)
+
+**Reviews: Represents a guest's review of a property they have stayed in.**
+
+id (Primary Key)
+
+rating
+
+comment
+
+user_id (Foreign Key to Users)
+
+property_id (Foreign Key to Properties)
+
+**Payments: Represents a payment transaction for a booking.**
+
+id (Primary Key)
+
+amount
+
+status
+
+booking_id (Foreign Key to Bookings)
+
+payment_date
+
+**Relationships**
+The entities are related in the following ways:
+
+A User can have many Properties (acting as a host) and can also make many Bookings and write many Reviews (acting as a guest).
+
+A Property belongs to a single User (its host).
+
+A Booking is made by a single User and is for a single Property.
+
+A Review is written by a single User and is for a single Property.
+
+A Payment is associated with a single Booking.
+
 **Team Roles**
 Based on the project's needs and industry standards, here are the roles and responsibilities for a project team working on a web application like this AirBnB clone.
 

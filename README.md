@@ -1,7 +1,9 @@
 **AirBnB Clone Project**
+
 This project is a personal initiative to create a simplified, functional clone of the popular online lodging marketplace, AirBnB. The goal is to build a robust, scalable web application from the ground up, focusing on core features and best practices in software development.
 
 **Project Overview**
+
 The application will allow users to:
 
 Sign up and log in.
@@ -15,6 +17,7 @@ Book a property for a specific date range.
 Manage their own listings and bookings.
 
 **Goals**
+
 Gain hands-on experience: Apply knowledge of web development to a real-world project.
 
 Build a full-stack application: Develop both the front-end (user interface) and back-end (server, database) components.
@@ -24,6 +27,7 @@ Demonstrate proficiency: Create a portfolio-ready project showcasing skills in v
 Collaborate and learn: Work with a project team (as a simulated environment) and document the process.
 
 **Tech Stack**
+
 Front-end: HTML, CSS, JavaScript (React)
 
 Back-end: Python (Flask), RESTful API
@@ -31,6 +35,7 @@ Back-end: Python (Flask), RESTful API
 Database: MySQL
 
 **Technology Stack**
+
 This project's technology stack is a combination of front-end, back-end, and database technologies chosen for their power and efficiency in web development.
 
 HTML (HyperText Markup Language): This is the fundamental language for building the structure of a web page. Think of it as the skeleton of the website, defining all the content like headings, paragraphs, and images.
@@ -126,6 +131,20 @@ A Booking is made by a single User and is for a single Property.
 A Review is written by a single User and is for a single Property.
 
 A Payment is associated with a single Booking.
+
+**Feature Breakdown**
+
+This project will focus on the core functionality necessary to create a simplified, yet robust, lodging platform.
+
+User Management: This feature handles all aspects of user authentication and profiles, including the ability for users to sign up, log in, and manage their personal information. This is crucial for securing the application and providing a personalized experience.
+
+Property Management: This allows hosts to create, edit, and manage their property listings. Guests can also browse and view details for all available properties, which is the main function of the application.
+
+Booking System: This is the core transactional feature of the app. It enables a user to reserve a property for a specific date range, ensuring that properties can't be double-booked and that hosts are notified of new reservations.
+
+Review System: This feature allows guests to leave reviews and ratings for properties they have booked. It adds a layer of trust and transparency to the platform by providing valuable feedback for future guests and hosts.
+
+Payment System: This handles the financial transactions associated with bookings. It ensures that payments are securely processed and recorded, associating them with specific bookings to complete the reservation process.
 
 **Team Roles**
 Based on the project's needs and industry standards, here are the roles and responsibilities for a project team working on a web application like this AirBnB clone.

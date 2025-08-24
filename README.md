@@ -156,7 +156,12 @@ Authorization: Once a user is authenticated, authorization determines what they 
 
 Rate Limiting: This measure controls the number of API requests a user can make within a specific time frame. It is a vital defense against brute-force attacks and denial-of-service (DoS) attempts, helping to prevent our systems from being overwhelmed and ensuring consistent availability and performance for all users.
 
+**CI/CD Pipeline**
+
+A CI/CD pipeline (Continuous Integration/Continuous Delivery) is a set of automated processes that allows developers to deliver code changes more frequently and reliably. For this project, a CI/CD pipeline is essential for automating tasks like running tests, building the application, and deploying it to a server. This automation reduces the chance of human error, ensures that code is always in a working state, and allows for rapid, consistent deployments. We can implement this using tools like GitHub Actions to trigger builds and tests on every commit, and Docker to containerize the application for consistent deployment across different environments.
+
 **Team Roles**
+
 Based on the project's needs and industry standards, here are the roles and responsibilities for a project team working on a web application like this AirBnB clone.
 
 **Backend Developer**
